@@ -1,0 +1,25 @@
+//grid
+$columns: 12;
+$desktop: 1280px;
+$laptop: 940px;
+$tablet: 768px;
+$mobile: 600px;
+$desktop-up: "only screen and (min-width : #{$desktop + 1})";
+$laptop-up: "only screen and (min-width : #{$laptop + 1})";
+$tablet-up: "only screen and (min-width : #{$tablet + 1})";
+$desktop-down: "only screen and (max-width : #{$desktop})";
+$laptop-down: "only screen and (max-width : #{$laptop})";
+$tablet-down: "only screen and (max-width : #{$tablet})";
+
+//color
+$primary-color: #0097A7;
+$gray: #A0A0A0;
+
+//typography
+$museo-light: 100;
+$museo-regular: 300;
+$museo-bold: 500;
+
+$nimbus-light: 100;
+$nimbus-regular: 300;
+$nimbus-bold: 500;

@@ -1,0 +1,25 @@
+
+<!-- <aside [ngStyle]="{'margin-left':isOpenNav?'250px':'0px'}" id="main">
+  <span class="hamburger" (click)="isOpenNav = !isOpenNav" *ngIf="!isOpenNav">&#9776;</span>
+  <span class="closeHamburger" (click)="isOpenNav = !isOpenNav" *ngIf="isOpenNav">&times;</span>
+
+  <div id="mySidenav" class="sidenav" [style.width]="isOpenNav?'250px':'0px'">
+      <a (click)="isOpenNav = !isOpenNav" [routerLink]="['/']">Home</a>
+      <a (click)="isOpenNav = !isOpenNav" [routerLink]="['/dummies']">Dummy</a>
+      <a (click)="logout();">Logout</a>
+  </div>
+</aside>  -->
+
+<aside [ngStyle]="{'width':isOpenNav?'5rem':'3.2rem', 'transition':isOpenNav?'all .3s ease':'0'}">
+  <div class="menu" (click)="isOpenNav = !isOpenNav" *ngIf="!isOpenNav">
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+  <div class="menu" (click)="isOpenNav = !isOpenNav" *ngIf="isOpenNav">
+    <span class="line"></span>
+  </div>
+  <div class="labelMenu">
+    <p>MENU</p>
+    <span class="line-menu"></span>
+  </div>
+</aside>

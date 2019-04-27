@@ -1,0 +1,13 @@
+* {
+    &,
+    &:after,
+    &:focus,
+    &:before {
+      box-sizing: border-box;   
+      outline: none
+    }
+}
+
+body, figure {
+    margin: 0
+}

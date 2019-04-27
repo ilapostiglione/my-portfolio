@@ -1,0 +1,42 @@
+@import "../../../leaves/variables";
+
+aside {
+    height: 100vh;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+
+    .menu {
+        position: fixed;
+        top: .7rem;
+        left: .7rem;
+
+        .line {
+            width: 1.8rem;
+            height: 2px;
+            background-color: #fff;
+            display: block;
+            margin: 6px auto;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+.labelMenu {
+    position: absolute;
+    top: 20rem;
+    transform: rotate(270deg);
+    font-family: "Nimbus Light";
+    color: #fff;
+    letter-spacing: 4px;
+    display: flex;
+    align-items: center;
+
+    .line-menu {
+        width: 4rem;
+        height: 1px;
+        background-color: #fff;
+        display: block;
+        margin-left: 0.8rem
+    }
+}

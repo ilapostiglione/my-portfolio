@@ -1,0 +1,41 @@
+html {
+    font-size: 15px
+}
+
+// museo
+@font-face {
+    font-family: 'Museo Light';
+    src:url('assets/fonts/museo/Museo100-Regular.otf');
+    font-weight: $museo-light
+}
+
+@font-face {
+    font-family: 'Museo Regular';
+    src:url('assets/fonts/museo/Museo300-Regular.otf');
+    font-weight: $museo-regular
+}
+
+@font-face {
+    font-family: 'Museo Bold';
+    src:url('assets/fonts/museo/Museo500-Regular.otf');
+    font-weight: $museo-bold
+}
+
+//nimbus
+@font-face {
+    font-family: 'Nimbus Light';
+    src:url('assets/fonts/nimbus/NimbusSansDOT-Ligh.otf');
+    font-weight: $nimbus-light
+}
+
+@font-face {
+    font-family: 'Nimbus Regular';
+    src:url('assets/fonts/nimbus/NimbusSansDOT-Regu.otf');
+    font-weight: $nimbus-regular
+}
+
+@font-face {
+    font-family: 'Nimbus Bold';
+    src:url('assets/fonts/nimbus/NimbusSansDOT-Bold.otf');
+    font-weight: $nimbus-bold
+}

@@ -1,0 +1,28 @@
+.container {
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    $i: 1;
+    margin: 0 -15px;
+
+    @while $i <=$columns {
+      $perc: unquote((100 / ($columns / $i)) + "%");
+      .col-#{$i} {
+        flex: 0 1 $perc;
+        padding: 0 15px;
+        box-sizing: border-box;
+      }
+      $i: $i+1;
+    }
+
+    [class^="col-"] {
+      @media screen and (max-width: $laptop) {
+        flex: 1 0 50%;
+      }
+      @media screen and (max-width: $mobile) {
+        flex-basis: 100%;
+      }
+    }
+}
