@@ -1,16 +1,4 @@
-
-<!-- <aside [ngStyle]="{'margin-left':isOpenNav?'250px':'0px'}" id="main">
-  <span class="hamburger" (click)="isOpenNav = !isOpenNav" *ngIf="!isOpenNav">&#9776;</span>
-  <span class="closeHamburger" (click)="isOpenNav = !isOpenNav" *ngIf="isOpenNav">&times;</span>
-
-  <div id="mySidenav" class="sidenav" [style.width]="isOpenNav?'250px':'0px'">
-      <a (click)="isOpenNav = !isOpenNav" [routerLink]="['/']">Home</a>
-      <a (click)="isOpenNav = !isOpenNav" [routerLink]="['/dummies']">Dummy</a>
-      <a (click)="logout();">Logout</a>
-  </div>
-</aside>  -->
-
-<aside [ngStyle]="{'width':isOpenNav?'11rem':'3.2rem', 'transition':isOpenNav?'all .3s ease':'0'}">
+<aside [ngStyle]="{'width':isOpenNav?'11.2rem':'3.2rem', 'transition':isOpenNav?'all .3s ease':'0'}">
   <div class="menu" (click)="isOpenNav = !isOpenNav" *ngIf="!isOpenNav">
     <span class="line"></span>
     <span class="line"></span>
@@ -18,15 +6,51 @@
   <div class="menu" (click)="isOpenNav = !isOpenNav" *ngIf="isOpenNav">
     <span class="line"></span>
   </div>
-  <div class="labelMenu" [ngStyle]="{'visibility':isOpenNav?'hidden':'visible'}">
+  <div class="labelMenu" [ngStyle]="{'visibility':isOpenNav?'hidden':'visible', 'transition':isOpenNav?'transition:left .3s ease':'0'}">
     <p>MENU</p>
     <span class="line-menu"></span>
   </div>
   <div class="list-menu" [ngStyle]="{'visibility':isOpenNav?'visible':'hidden'}">
-    <ul>
-      <li>Lorem 1</li>
-      <li>Lorem 2</li>
-      <li>Lorem 3</li>
-    </ul>
+    <div class="home">
+      <span>Home</span>
+      <ul>
+        <li>
+          <a routerLink="intro">Intro</a>
+        </li>
+      </ul>
+    </div>
+    <div class="projects">
+      <span>Projects</span>
+      <ul>
+        <li>
+          <a routerLink="projects/graphic">Graphic</a>
+        </li>
+        <li>
+          <a routerLink="projects/motion">Motion</a>
+        </li>
+        <li>
+          <a routerLink="projects/web">Web</a>
+        </li>
+      </ul>
+    </div>
+    <div class="aboutMe">
+      <span>Find out</span>
+      <ul>
+        <li>
+          <a routerLink="about-me">About me</a>
+        </li>
+      </ul>
+    </div>
+    <div class="social">
+      <button>
+        <img src="../../../assets/social/icon_behance.svg" alt="">
+      </button>
+      <button>
+        <img src="../../../assets/social/icon_mail.svg" alt="">
+      </button>
+      <button>
+        <img src="../../../assets/social/icon_instagram.svg" alt="">
+      </button>
+    </div>
   </div>
 </aside>

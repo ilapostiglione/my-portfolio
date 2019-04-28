@@ -5,6 +5,8 @@ aside {
     background-color: $primary-color;
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 999;
 
     .menu {
         position: fixed;
@@ -20,23 +22,72 @@ aside {
             transition: all 0.3s ease-in-out;
         }
     }
-}
 
-.labelMenu {
-    position: absolute;
-    top: 20rem;
-    transform: rotate(270deg);
-    font-family: "Nimbus Light";
-    color: #fff;
-    letter-spacing: 4px;
-    display: flex;
-    align-items: center;
+    .labelMenu {
+        position: absolute;
+        top: 20rem;
+        transform: rotate(270deg);
+        font-family: "Nimbus Light";
+        color: #fff;
+        letter-spacing: 4px;
+        display: flex;
+        align-items: center;
+    
+        .line-menu {
+            width: 4rem;
+            height: 1px;
+            background-color: #fff;
+            display: block;
+            margin-left: 0.8rem
+        }
+    }
 
-    .line-menu {
-        width: 4rem;
-        height: 1px;
-        background-color: #fff;
-        display: block;
-        margin-left: 0.8rem
+    .list-menu {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        span {
+            font-family: 'Nimbus Light';
+            text-transform: uppercase;
+            letter-spacing: .6px
+        }
+
+        ul {
+            padding: 0;
+            margin-bottom: 2rem;
+            margin-top: .3rem;
+
+            li {
+                list-style: none;
+                font-family: 'Museo Regular';
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 1.7rem
+                }
+            }
+        }
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        position: absolute;
+        top: 44rem;
+        left: 6px;
+
+        button {
+            background: none;
+            border: none;
+            padding: 0;
+
+            img {
+                width: 2.2rem;
+            }
+        }
     }
 }

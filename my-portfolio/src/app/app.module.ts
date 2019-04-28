@@ -5,20 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
-import { IntroComponent } from './components/intro/intro.component';
-import { GraphicsComponent } from './components/graphics/graphics.component';
-import { MotionComponent } from './components/motion/motion.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
-
+import { IntroComponent } from './components/home/intro/intro.component';
+import { GraphicComponent } from './components/projects/graphic/graphic.component';
+import { MotionComponent } from './components/projects/motion/motion.component';
+import { WebComponent } from './components/projects/web/web.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
+    AboutMeComponent,
     IntroComponent,
-    GraphicsComponent,
+    GraphicComponent,
     MotionComponent,
-    AboutMeComponent
+    WebComponent
   ],
   imports: [
     BrowserModule,
