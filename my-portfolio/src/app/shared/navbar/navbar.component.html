@@ -10,7 +10,7 @@
   </div>
 </aside>  -->
 
-<aside [ngStyle]="{'width':isOpenNav?'5rem':'3.2rem', 'transition':isOpenNav?'all .3s ease':'0'}">
+<aside [ngStyle]="{'width':isOpenNav?'11rem':'3.2rem', 'transition':isOpenNav?'all .3s ease':'0'}">
   <div class="menu" (click)="isOpenNav = !isOpenNav" *ngIf="!isOpenNav">
     <span class="line"></span>
     <span class="line"></span>
@@ -18,8 +18,15 @@
   <div class="menu" (click)="isOpenNav = !isOpenNav" *ngIf="isOpenNav">
     <span class="line"></span>
   </div>
-  <div class="labelMenu">
+  <div class="labelMenu" [ngStyle]="{'visibility':isOpenNav?'hidden':'visible'}">
     <p>MENU</p>
     <span class="line-menu"></span>
+  </div>
+  <div class="list-menu" [ngStyle]="{'visibility':isOpenNav?'visible':'hidden'}">
+    <ul>
+      <li>Lorem 1</li>
+      <li>Lorem 2</li>
+      <li>Lorem 3</li>
+    </ul>
   </div>
 </aside>
